@@ -1,9 +1,12 @@
+import './style.css';
+
 const offset = 100;
 const scrollUp = document.querySelector('.scroll-up');
 const scrollUpSvgPath = document.querySelector('.scroll-up__svg-path');
 console.log(scrollUpSvgPath);
 const pathLength = scrollUpSvgPath.getTotalLength();
 console.log(pathLength);
+
 //Стиль path
 scrollUpSvgPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
 scrollUpSvgPath.style.transition = 'stroke-dashoffset 20ms';
